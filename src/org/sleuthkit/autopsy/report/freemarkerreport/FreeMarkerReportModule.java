@@ -33,10 +33,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.logging.Level;
+import org.apache.commons.io.FileUtils;
 
 import freemarker.template.Configuration;
 import freemarker.template.TemplateExceptionHandler;
 import freemarker.template.Template;
+import java.nio.file.Files;
 import org.sleuthkit.autopsy.coreutils.PlatformUtil;
 import java.util.HashMap;
 import java.util.ArrayList;
@@ -53,6 +55,7 @@ class FreeMarkerReportModule implements GeneralReportModule {
     private Case currentCase;
     private SleuthkitCase skCase;
     private String reportPath;
+    private String templatesLocation = PlatformUtil.getUserDirectory().getAbsolutePath() + "\\templates";
 
     private Configuration cfg;
     // Hidden constructor for the report
@@ -65,8 +68,8 @@ class FreeMarkerReportModule implements GeneralReportModule {
 
             // Specify the source where the template files come from. Here I set a
             // plain directory for it, but non-file-system sources are possible too:
-            logger.log(Level.INFO,"Looking for templates in: " + PlatformUtil.getUserDirectory().getAbsolutePath());
-            cfg.setDirectoryForTemplateLoading(new File(PlatformUtil.getUserDirectory().getAbsolutePath() + "\\templates"));
+            logger.log(Level.INFO,"Looking for templates in: " + templatesLocation);
+            cfg.setDirectoryForTemplateLoading(new File(templatesLocation));
 
             // Set the preferred charset template files are stored in. UTF-8 is
             // a good choice in most applications:
@@ -98,11 +101,21 @@ class FreeMarkerReportModule implements GeneralReportModule {
     @Override
     public void generateReport(String path, ReportProgressPanel progressPanel) {
 
+        String selectedTemplate = "default";
+        File selectedTemplateDirectory = new File(templatesLocation + "\\" + selectedTemplate);
+        File[] filesInTemplateDir = selectedTemplateDirectory.listFiles();
+        String reportExtension = ".html";
+        for (File f : filesInTemplateDir){
+            if (f.getName().contains("report")){
+                reportExtension = f.getName().substring(f.getName().lastIndexOf("."));
+            }
+        }
+        
         // Start the progress bar and setup the report
         progressPanel.setIndeterminate(false);
         progressPanel.start();
         progressPanel.updateStatusLabel(NbBundle.getMessage(this.getClass(), "FreeMarkerReportModule.progress.querying"));
-        reportPath = path + "ReportKML.kml"; //NON-NLS
+        reportPath = path + "FreeMarkerReportOutput"+reportExtension; //NON-NLS
         currentCase = Case.getCurrentCase();
         skCase = currentCase.getSleuthkitCase();
 
@@ -151,9 +164,17 @@ class FreeMarkerReportModule implements GeneralReportModule {
         }
 
         try{
-            Template temp = cfg.getTemplate("test.ftl");
+            Template temp = cfg.getTemplate(selectedTemplate);
             BufferedWriter out = new BufferedWriter(new FileWriter(reportPath));
             temp.process(data, out);
+            File source = new File(templatesLocation+ "\\" + selectedTemplate + "\\css");
+            File dest = new File(path + "\\css");
+            try {
+                FileUtils.copyDirectory(source, dest);
+            } catch (IOException e) {
+                logger.log(Level.INFO,e.getMessage());
+            }
+            
         }catch (Exception e){
             logger.log(Level.SEVERE,e.getMessage());
         }

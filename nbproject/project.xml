@@ -38,6 +38,10 @@
                 <runtime-relative-path>ext/freemarker.jar</runtime-relative-path>
                 <binary-origin>C:\Users\jason\Documents\NetBeansProjects\FreeMarkerReports\release\modules\ext\freemarker.jar</binary-origin>
             </class-path-extension>
+            <class-path-extension>
+                <runtime-relative-path>ext/commons-io-2.4.jar</runtime-relative-path>
+                <binary-origin>C:\Users\jason\Documents\NetBeansProjects\FreeMarkerReports\release\modules\ext\commons-io-2.4.jar</binary-origin>
+            </class-path-extension>
         </data>
     </configuration>
 </project>

@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+OpenIDE-Module: org.sleuthkit.autopsy.report.freemarkerreport
+OpenIDE-Module-Layer: org/sleuthkit/autopsy/report/freemarkerreport/layer.xml
+OpenIDE-Module-Localizing-Bundle: org/sleuthkit/autopsy/report/freemarkerreport/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><module codename="org.sleuthkit.autopsy.report.freemarkerreport">
-    <module_version install_time="1416358476186" last="true" origin="installer" specification_version="1.0">
-        <file crc="1779108808" name="config/Modules/org-sleuthkit-autopsy-report-freemarkerreport.xml"/>
-        <file crc="937643154" name="modules/ext/commons-io-2.4.jar"/>
-        <file crc="101919475" name="modules/ext/freemarker.jar"/>
-        <file crc="3678191777" name="modules/org-sleuthkit-autopsy-report-freemarkerreport.jar"/>
-    </module_version>
-</module>

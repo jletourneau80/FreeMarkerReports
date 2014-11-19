@@ -1,4 +1,5 @@
 ||:org.sleuthkit.autopsy.report.freemarkerreport.FreeMarkerReportModule
+[Ljava.io.File;
 freemarker.template.Template
 java.lang.Class
 java.io.FileOutputStream

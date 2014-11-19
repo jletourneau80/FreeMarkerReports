@@ -134,16 +134,16 @@ class FreeMarkerReportModule implements GeneralReportModule {
         
         //<artifactName : ListOf<attribute:value>>
         
-        HashMap<String, ArrayList<HashMap<String,String>>> artifacts = new HashMap<String, ArrayList<HashMap<String, String>>>();
+        HashMap<BlackboardArtifact.ARTIFACT_TYPE, ArrayList<HashMap<String,String>>> artifacts = new HashMap<BlackboardArtifact.ARTIFACT_TYPE, ArrayList<HashMap<String, String>>>();
         try{
             for (BlackboardArtifact.ARTIFACT_TYPE artifactType : skCase.getBlackboardArtifactTypesInUse()){
-                artifacts.put(artifactType.name(), new ArrayList<HashMap<String, String>>());
+                artifacts.put(artifactType, new ArrayList<HashMap<String, String>>());
                 for (BlackboardArtifact artifact : skCase.getBlackboardArtifacts(artifactType)){
                     HashMap<String, String> attributes = new HashMap<String, String>();
                     for (BlackboardAttribute attribute : artifact.getAttributes()){
                         attributes.put(attribute.getAttributeTypeDisplayName(), attribute.getValueString());
                     }
-                    artifacts.get(artifactType.name()).add(attributes);
+                    artifacts.get(artifactType).add(attributes);
                 }
             }
         }catch(Exception e){
@@ -164,11 +164,11 @@ class FreeMarkerReportModule implements GeneralReportModule {
         }
 
         try{
-            Template temp = cfg.getTemplate(selectedTemplate);
+            Template temp = cfg.getTemplate(selectedTemplate + "\\report" + reportExtension);
             BufferedWriter out = new BufferedWriter(new FileWriter(reportPath));
             temp.process(data, out);
-            File source = new File(templatesLocation+ "\\" + selectedTemplate + "\\css");
-            File dest = new File(path + "\\css");
+            File source = new File(templatesLocation+ "\\" + selectedTemplate + "\\assets");
+            File dest = new File(path + "\\assets");
             try {
                 FileUtils.copyDirectory(source, dest);
             } catch (IOException e) {

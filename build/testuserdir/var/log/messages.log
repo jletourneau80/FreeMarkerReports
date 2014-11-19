@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
->Log Session: Tuesday, November 18, 2014 2:49:18 PM EST
+>Log Session: Tuesday, November 18, 2014 7:54:38 PM EST
 >System Info: 
   Product Version         = NetBeans Platform 7.3.1 (Build 201306052037)
   Operating System        = Windows 7 version 6.1 running on x86
@@ -31,105 +31,91 @@ WARNING [org.netbeans.core.startup.NbEvents]: The extension C:\autopsy_platform\
 WARNING [org.netbeans.core.startup.NbEvents]: The extension C:\autopsy_platform\autopsy\modules\ext\poi-ooxml-schemas-3.8.jar may be multiply loaded by modules: [C:\autopsy_platform\autopsy\modules\org-sleuthkit-autopsy-corelibs.jar, C:\autopsy_platform\autopsy\modules\org-sleuthkit-autopsy-keywordsearch.jar]; see: http://www.netbeans.org/download/dev/javadoc/org-openide-modules/org/openide/modules/doc-files/classpath.html#class-path
 WARNING [org.netbeans.core.startup.InstalledFileLocatorImpl]: module org.sleuthkit.autopsy.core in C:\autopsy_platform\autopsy does not own modules/lib/x86/msvcr100.dll at org.netbeans.StandardModule$OneModuleClassLoader.findLibrary(StandardModule.java:657)
 WARNING [org.netbeans.core.startup.InstalledFileLocatorImpl]: module org.sleuthkit.autopsy.core in C:\autopsy_platform\autopsy does not own modules/lib/x86/msvcp100.dll at org.netbeans.StandardModule$OneModuleClassLoader.findLibrary(StandardModule.java:657)
-Nov 18, 2014 2:49:20 PM org.sleuthkit.autopsy.core.Installer loadDynLibraries
+Nov 18, 2014 7:54:41 PM org.sleuthkit.autopsy.core.Installer loadDynLibraries
 INFO: MS CRT libraries loaded
-Nov 18, 2014 2:49:20 PM org.sleuthkit.autopsy.core.Installer loadDynLibraries
+Nov 18, 2014 7:54:42 PM org.sleuthkit.autopsy.core.Installer loadDynLibraries
 INFO: ZLIB library loaded loaded
-Nov 18, 2014 2:49:20 PM org.sleuthkit.autopsy.core.Installer loadDynLibraries
+Nov 18, 2014 7:54:42 PM org.sleuthkit.autopsy.core.Installer loadDynLibraries
 INFO: EWF library loaded
-Nov 18, 2014 2:49:20 PM org.sleuthkit.autopsy.core.Installer <init>
+Nov 18, 2014 7:54:42 PM org.sleuthkit.autopsy.core.Installer <init>
 INFO: core installer created
-Nov 18, 2014 2:49:20 PM org.sleuthkit.autopsy.core.Installer validate
+Nov 18, 2014 7:54:42 PM org.sleuthkit.autopsy.core.Installer validate
 INFO: validate()
-Nov 18, 2014 2:49:20 PM org.sleuthkit.autopsy.core.Installer validate
+Nov 18, 2014 7:54:42 PM org.sleuthkit.autopsy.core.Installer validate
 INFO: org.sleuthkit.autopsy.coreutils.Installer validate()
-Nov 18, 2014 2:49:20 PM org.sleuthkit.autopsy.core.Installer validate
+Nov 18, 2014 7:54:42 PM org.sleuthkit.autopsy.core.Installer validate
 INFO: org.sleuthkit.autopsy.corecomponents.Installer validate()
-Nov 18, 2014 2:49:20 PM org.sleuthkit.autopsy.core.Installer validate
+Nov 18, 2014 7:54:42 PM org.sleuthkit.autopsy.core.Installer validate
 INFO: org.sleuthkit.autopsy.datamodel.Installer validate()
-Nov 18, 2014 2:49:20 PM org.sleuthkit.autopsy.core.Installer validate
+Nov 18, 2014 7:54:42 PM org.sleuthkit.autopsy.core.Installer validate
 INFO: org.sleuthkit.autopsy.ingest.Installer validate()
-Nov 18, 2014 2:49:22 PM org.sleuthkit.autopsy.core.Installer <init>
+Nov 18, 2014 7:54:45 PM org.sleuthkit.autopsy.core.Installer <init>
 INFO: core installer created
-Nov 18, 2014 2:49:22 PM org.sleuthkit.autopsy.coreutils.Installer restored
+Nov 18, 2014 7:54:46 PM org.sleuthkit.autopsy.coreutils.Installer restored
 INFO: Default charset: windows-1252
-Nov 18, 2014 2:49:22 PM org.sleuthkit.autopsy.coreutils.Installer restored
+Nov 18, 2014 7:54:46 PM org.sleuthkit.autopsy.coreutils.Installer restored
 INFO: Default file encoding: Cp1252
-Nov 18, 2014 2:49:22 PM org.sleuthkit.autopsy.coreutils.Installer restored
+Nov 18, 2014 7:54:46 PM org.sleuthkit.autopsy.coreutils.Installer restored
 INFO: Java runtime version: 1.8.0_05-b13
-Nov 18, 2014 2:49:22 PM org.sleuthkit.autopsy.coreutils.Installer restored
+Nov 18, 2014 7:54:46 PM org.sleuthkit.autopsy.coreutils.Installer restored
 INFO: Netbeans Platform build: 201306052037
-Nov 18, 2014 2:49:22 PM org.sleuthkit.autopsy.coreutils.Installer restored
+Nov 18, 2014 7:54:46 PM org.sleuthkit.autopsy.coreutils.Installer restored
 INFO: Application name: Autopsy, version: 3.1.1, build: DEVELOPMENT
-Nov 18, 2014 2:49:22 PM org.sleuthkit.autopsy.coreutils.Installer restored
+Nov 18, 2014 7:54:46 PM org.sleuthkit.autopsy.coreutils.Installer restored
 INFO: os.name: Windows 7
-Nov 18, 2014 2:49:22 PM org.sleuthkit.autopsy.coreutils.Installer restored
+Nov 18, 2014 7:54:46 PM org.sleuthkit.autopsy.coreutils.Installer restored
 INFO: os.arch: x86
-Nov 18, 2014 2:49:22 PM org.sleuthkit.autopsy.coreutils.Installer restored
-INFO: PID: 4484
-Nov 18, 2014 2:49:22 PM org.sleuthkit.autopsy.coreutils.Installer restored
-INFO: Process Virtual Memory Used: 1168117760
-Nov 18, 2014 2:49:22 PM org.sleuthkit.autopsy.core.Installer restored
+WARNING [org.openide.filesystems.Ordering]: Found same position 250 for both Services/org-sleuthkit-autopsy-filesearch-FileSearchAction.instance and Services/org-sleuthkit-autopsy-keywordsearch-HighlightedTextMarkup.instance
+WARNING [org.openide.filesystems.Ordering]: Not all children in Services/ marked with the position attribute: [AutoupdateType, Browsers, Hidden, Introspector, JavaHelp, MIMEResolver, PropertyEditorManager, org-sleuthkit-autopsy-corecomponents-DataContentTopComponent.instance], but some are: [org-sleuthkit-autopsy-directorytree-DirectoryTreeTopComponent.instance, org-sleuthkit-autopsy-directorytree-DirectoryTreeTopComponent2.instance, org-sleuthkit-autopsy-filesearch-FileSearchAction.instance, org-sleuthkit-autopsy-keywordsearch-HighlightedTextMarkup.instance, org-sleuthkit-autopsy-report-ReportHTML.instance, org-sleuthkit-autopsy-report-ReportExcel.instance, org-sleuthkit-autopsy-report-ReportBodyFile.instance, org-sleuthkit-autopsy-report-FileReportText.instance, org-sleuthkit-autopsy-report-ReportKML.instance, org-sleuthkit-autopsy-report-freemarkerreport-FreeMarkerReportModule.instance]
+Nov 18, 2014 7:54:51 PM org.sleuthkit.autopsy.coreutils.Installer restored
+INFO: PID: 2980
+Nov 18, 2014 7:54:51 PM org.sleuthkit.autopsy.coreutils.Installer restored
+INFO: Process Virtual Memory Used: 1169932288
+Nov 18, 2014 7:54:51 PM org.sleuthkit.autopsy.core.Installer restored
 INFO: org.sleuthkit.autopsy.coreutils.Installer restore succeeded
-Nov 18, 2014 2:49:22 PM org.sleuthkit.autopsy.core.Installer restored
+Nov 18, 2014 7:54:51 PM org.sleuthkit.autopsy.core.Installer restored
 INFO: org.sleuthkit.autopsy.corecomponents.Installer restore succeeded
-Nov 18, 2014 2:49:22 PM org.sleuthkit.autopsy.core.Installer restored
+Nov 18, 2014 7:54:51 PM org.sleuthkit.autopsy.core.Installer restored
 INFO: org.sleuthkit.autopsy.datamodel.Installer restore succeeded
-Nov 18, 2014 2:49:22 PM org.sleuthkit.autopsy.core.Installer restored
+Nov 18, 2014 7:54:51 PM org.sleuthkit.autopsy.core.Installer restored
 INFO: org.sleuthkit.autopsy.ingest.Installer restore succeeded
-Nov 18, 2014 2:49:22 PM org.sleuthkit.autopsy.core.Installer restored
+Nov 18, 2014 7:54:51 PM org.sleuthkit.autopsy.core.Installer restored
 INFO: Autopsy Core restore completed
-Nov 18, 2014 2:49:22 PM org.sleuthkit.autopsy.keywordsearch.KeywordSearchSettings setDefaults
+Nov 18, 2014 7:54:51 PM org.sleuthkit.autopsy.keywordsearch.KeywordSearchSettings setDefaults
 INFO: Detecting default settings.
 WARNING [org.netbeans.core.startup.InstalledFileLocatorImpl]: no such module C:\autopsy_platform\autopsy\update_tracking\org-sleuthkit-autopsy-coreutils.xml at org.sleuthkit.autopsy.coreutils.PlatformUtil.getInstallPath(PlatformUtil.java:66)
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Nov 18, 2014 2:49:23 PM org.sleuthkit.autopsy.keywordsearch.Server <init>
+Nov 18, 2014 7:54:53 PM org.sleuthkit.autopsy.keywordsearch.Server <init>
 INFO: Created Server instance
-Nov 18, 2014 2:49:23 PM org.sleuthkit.autopsy.keywordsearch.Installer restored
+Nov 18, 2014 7:54:53 PM org.sleuthkit.autopsy.keywordsearch.Installer restored
 INFO: Checking if server is running
-Nov 18, 2014 2:49:23 PM org.sleuthkit.autopsy.keywordsearch.Server isRunning
-INFO: Solr server is running
-Nov 18, 2014 2:49:23 PM org.sleuthkit.autopsy.keywordsearch.Installer restored
-WARNING: Already a server running on 23232 port, maybe leftover from a previous run. Trying to shut it down.
-Nov 18, 2014 2:49:23 PM org.sleuthkit.autopsy.keywordsearch.Server stop
-INFO: Stopping Solr server from: C:\autopsy_platform\autopsy\solr
-Nov 18, 2014 2:49:23 PM org.sleuthkit.autopsy.keywordsearch.Server stop
-INFO: Waiting for stopping Solr server
-Nov 18, 2014 2:49:24 PM org.sleuthkit.autopsy.keywordsearch.Server killSolr
-INFO: Trying to kill old Solr process, PID: 5520
-Nov 18, 2014 2:49:24 PM org.sleuthkit.autopsy.keywordsearch.Server stop
-INFO: Finished stopping Solr server
-Nov 18, 2014 2:49:24 PM org.sleuthkit.autopsy.keywordsearch.Installer restored
-INFO: Re-checking if server is running
-Nov 18, 2014 2:49:26 PM org.sleuthkit.autopsy.keywordsearch.Server isRunning
+Nov 18, 2014 7:54:56 PM org.sleuthkit.autopsy.keywordsearch.Server isRunning
 INFO: Solr server is not running, cause: Connection refused: connect
-Nov 18, 2014 2:49:26 PM org.sleuthkit.autopsy.keywordsearch.Installer restored
-INFO: Old Solr server shutdown successfully.
-Nov 18, 2014 2:49:26 PM org.sleuthkit.autopsy.keywordsearch.Installer restored
+Nov 18, 2014 7:54:56 PM org.sleuthkit.autopsy.keywordsearch.Installer restored
 INFO: Checking if port available.
-Nov 18, 2014 2:49:26 PM org.sleuthkit.autopsy.keywordsearch.Installer restored
+Nov 18, 2014 7:54:56 PM org.sleuthkit.autopsy.keywordsearch.Installer restored
 INFO: Port available, trying to start server.
-Nov 18, 2014 2:49:26 PM org.sleuthkit.autopsy.keywordsearch.Server start
+Nov 18, 2014 7:54:56 PM org.sleuthkit.autopsy.keywordsearch.Server start
 INFO: Starting Solr server from: C:\autopsy_platform\autopsy\solr
-Nov 18, 2014 2:49:26 PM org.sleuthkit.autopsy.keywordsearch.Server start
+Nov 18, 2014 7:54:56 PM org.sleuthkit.autopsy.keywordsearch.Server start
 INFO: Port [23232] available, starting Solr
-Nov 18, 2014 2:49:26 PM org.sleuthkit.autopsy.keywordsearch.Server start
+Nov 18, 2014 7:54:56 PM org.sleuthkit.autopsy.keywordsearch.Server start
 INFO: Starting Solr using: java -Xmx512m -DSTOP.PORT=34343 -Djetty.port=23232 -DSTOP.KEY=jjk#09s -Djava.util.logging.config.file=C:\autopsy_platform\autopsy\solr\solr\conf\logging-release.properties -jar start.jar 
-Nov 18, 2014 2:49:26 PM org.sleuthkit.autopsy.keywordsearch.Server start
+Nov 18, 2014 7:54:56 PM org.sleuthkit.autopsy.keywordsearch.Server start
 INFO: Finished starting Solr
-Nov 18, 2014 2:49:36 PM org.sleuthkit.autopsy.keywordsearch.Server start
-INFO: New Solr process PID: [5128]
-Nov 18, 2014 2:49:37 PM org.sleuthkit.autopsy.keywordsearch.Installer restored
+Nov 18, 2014 7:55:06 PM org.sleuthkit.autopsy.keywordsearch.Server start
+INFO: New Solr process PID: [864]
+Nov 18, 2014 7:55:08 PM org.sleuthkit.autopsy.keywordsearch.Installer restored
 INFO: Ensuring the server is running, retries remaining: 4
-Nov 18, 2014 2:49:37 PM org.sleuthkit.autopsy.keywordsearch.Server isRunning
+Nov 18, 2014 7:55:08 PM org.sleuthkit.autopsy.keywordsearch.Server isRunning
 INFO: Solr server is running
-Nov 18, 2014 2:49:37 PM org.sleuthkit.autopsy.keywordsearch.Installer restored
+Nov 18, 2014 7:55:08 PM org.sleuthkit.autopsy.keywordsearch.Installer restored
 INFO: Server appears now running. 
-Nov 18, 2014 2:49:38 PM org.sleuthkit.autopsy.keywordsearch.Installer restored
+Nov 18, 2014 7:55:09 PM org.sleuthkit.autopsy.keywordsearch.Installer restored
 INFO: Last check if server is running. 
-Nov 18, 2014 2:49:38 PM org.sleuthkit.autopsy.keywordsearch.Server isRunning
+Nov 18, 2014 7:55:09 PM org.sleuthkit.autopsy.keywordsearch.Server isRunning
 INFO: Solr server is running
 INFO [org.netbeans.core.startup.NbEvents]: Turning on modules:
 	org.openide.util.lookup [8.19.1 201306052037]
@@ -192,9 +178,8 @@ INFO [org.netbeans.core.startup.NbEvents]: Turning on modules:
 	org.netbeans.core.netigso [1.20.1 201306052037]
 	org.netbeans.core.nativeaccess/1 [1.19.1 201306052037]
 	org.netbeans.core.io.ui/1 [1.20.1 201306052037]
-WARNING [org.openide.filesystems.Ordering]: Found same position 250 for both Services/org-sleuthkit-autopsy-filesearch-FileSearchAction.instance and Services/org-sleuthkit-autopsy-keywordsearch-HighlightedTextMarkup.instance
-WARNING [org.openide.filesystems.Ordering]: Not all children in Services/ marked with the position attribute: [AutoupdateType, Browsers, Hidden, Introspector, JavaHelp, MIMEResolver, PropertyEditorManager, org-sleuthkit-autopsy-corecomponents-DataContentTopComponent.instance], but some are: [org-sleuthkit-autopsy-directorytree-DirectoryTreeTopComponent.instance, org-sleuthkit-autopsy-directorytree-DirectoryTreeTopComponent2.instance, org-sleuthkit-autopsy-filesearch-FileSearchAction.instance, org-sleuthkit-autopsy-keywordsearch-HighlightedTextMarkup.instance, org-sleuthkit-autopsy-report-ReportHTML.instance, org-sleuthkit-autopsy-report-ReportExcel.instance, org-sleuthkit-autopsy-report-ReportBodyFile.instance, org-sleuthkit-autopsy-report-FileReportText.instance, org-sleuthkit-autopsy-report-ReportKML.instance, org-sleuthkit-autopsy-report-freemarkerreport-FreeMarkerReportModule.instance]
-Nov 18, 2014 2:49:42 PM org.sleuthkit.autopsy.casemodule.StartupWindowProvider init
+INFO [org.openide.awt.Toolbar]: Too long AWTTask: 756 ms for org.openide.awt.Toolbar$Folder@11edc61(FolderList{MultiFileObject@bf0052[Toolbars/Keyword]})
+Nov 18, 2014 7:55:13 PM org.sleuthkit.autopsy.casemodule.StartupWindowProvider init
 INFO: Will use the default startup window: org.sleuthkit.autopsy.casemodule.StartupWindow[dialog0,465,325,459x317,invalid,hidden,layout=java.awt.BorderLayout,APPLICATION_MODAL,title=Welcome,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,30,443x279,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
 Diagnostic information
 Input arguments:
@@ -214,9 +199,9 @@ Input arguments:
 Compiler: HotSpot Tiered Compilers
 Heap memory usage: initial 56.0MB maximum 676.7MB
 Non heap memory usage: initial 2.2MB maximum -1b
-Garbage collector: Copy (Collections=15 Total time spent=0s)
+Garbage collector: Copy (Collections=14 Total time spent=0s)
 Garbage collector: MarkSweepCompact (Collections=1 Total time spent=0s)
-Classes: loaded=5559 total loaded=5559 unloaded 0
+Classes: loaded=5525 total loaded=5525 unloaded 0
 INFO [org.netbeans.core.ui.warmup.DiagnosticTask]: Total memory 3,757,629,440
 INFO [null]: Total physical memory 3,757,629,440
 WARNING [org.openide.filesystems.Ordering]: Found same position 1,400 for both Menu/Tools/org-netbeans-modules-autoupdate-ui-actions-PluginManagerAction.shadow and Menu/Tools/org-sleuthkit-autopsy-actions-OpenPythonModulesFolderAction.shadow
@@ -224,44 +209,111 @@ WARNING [org.openide.filesystems.Ordering]: Found same position 200 for both Men
 WARNING [org.openide.filesystems.Ordering]: Found same position 100 for both Menu/Tools/org-sleuthkit-autopsy-report-ReportWizardAction.shadow and Menu/Tools/org-sleuthkit-autopsy-timeline-Timeline.shadow
 INFO [org.netbeans.core.windows.persistence]: [PersistenceManager.getTopComponentForID] Problem when deserializing TopComponent for tcID:'Directory Listing'. Reason: Top component Directory Listing could not be located or loaded from Components folder.
 INFO [org.netbeans.core.windows.persistence]: [PersistenceManager.getTopComponentForID] Problem when deserializing TopComponent for tcID:'DataContentTopComponent'. Reason: Top component DataContentTopComponent could not be located or loaded from Components folder.
-Nov 18, 2014 2:49:44 PM org.sleuthkit.autopsy.corecomponents.DataContentTopComponent findInstance
+Nov 18, 2014 7:55:17 PM org.sleuthkit.autopsy.corecomponents.DataContentTopComponent findInstance
 WARNING: Cannot find DataContentTopComponent component. It will not be located properly in the window system.
-Nov 18, 2014 2:49:45 PM org.sleuthkit.autopsy.corecomponents.DataContentViewerHex <init>
+Nov 18, 2014 7:55:17 PM org.sleuthkit.autopsy.corecomponents.DataContentViewerHex <init>
 INFO: Created HexView instance: org.sleuthkit.autopsy.corecomponents.DataContentViewerHex[,0,0,0x0,invalid,layout=javax.swing.GroupLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
-Nov 18, 2014 2:49:45 PM org.sleuthkit.autopsy.coreutils.StringExtract$StringExtractUnicodeTable init
+Nov 18, 2014 7:55:17 PM org.sleuthkit.autopsy.coreutils.StringExtract$StringExtractUnicodeTable init
 INFO: initialized, unicode table loaded
-Nov 18, 2014 2:49:45 PM org.sleuthkit.autopsy.corecomponents.DataContentViewerString <init>
+Nov 18, 2014 7:55:17 PM org.sleuthkit.autopsy.corecomponents.DataContentViewerString <init>
 INFO: Created StringView instance: org.sleuthkit.autopsy.corecomponents.DataContentViewerString[,0,0,0x0,invalid,layout=javax.swing.GroupLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=java.awt.Dimension[width=5,height=5],preferredSize=]
-Nov 18, 2014 2:49:45 PM org.sleuthkit.autopsy.keywordsearch.ExtractedContentViewer <init>
-INFO: Created TextView instance: org.sleuthkit.autopsy.keywordsearch.ExtractedContentViewer@193bf9
-Nov 18, 2014 2:49:45 PM org.sleuthkit.autopsy.corecomponents.MediaViewVideoPanel createVideoPanel
+Nov 18, 2014 7:55:17 PM org.sleuthkit.autopsy.keywordsearch.ExtractedContentViewer <init>
+INFO: Created TextView instance: org.sleuthkit.autopsy.keywordsearch.ExtractedContentViewer@111924a
+Nov 18, 2014 7:55:17 PM org.sleuthkit.autopsy.corecomponents.MediaViewVideoPanel createVideoPanel
 INFO: 32 bit JVM detected. Creating GStreamer Video Player.
-Nov 18, 2014 2:49:45 PM org.sleuthkit.autopsy.corecomponents.GstVideoPanel initGst
+Nov 18, 2014 7:55:17 PM org.sleuthkit.autopsy.corecomponents.GstVideoPanel initGst
 INFO: Initializing gstreamer for video/audio viewing
-Nov 18, 2014 2:49:45 PM org.sleuthkit.autopsy.corecomponents.DataContentViewerMedia <init>
+Nov 18, 2014 7:55:18 PM org.sleuthkit.autopsy.corecomponents.DataContentViewerMedia <init>
 INFO: Created MediaView instance: org.sleuthkit.autopsy.corecomponents.DataContentViewerMedia[,0,0,0x0,invalid,layout=java.awt.CardLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
-Nov 18, 2014 2:49:45 PM org.sleuthkit.autopsy.corecomponents.DataContentTopComponent <init>
+Nov 18, 2014 7:55:18 PM org.sleuthkit.autopsy.corecomponents.DataContentTopComponent <init>
 INFO: Created DataContentTopComponent instance: org.sleuthkit.autopsy.corecomponents.DataContentTopComponent[Data Content,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=256,maximumSize=,minimumSize=,preferredSize=]
-INFO [org.openide.awt.Toolbar]: Too long AWTTask: 644 ms for org.openide.awt.MenuBar$LazyMenu$MenuFolder@13b6758(FolderList{MultiFileObject@24c7cc[Menu/Window]})
-Nov 18, 2014 2:49:45 PM org.sleuthkit.autopsy.casemodule.Case open
+INFO [org.openide.awt.Toolbar]: Too long AWTTask: 1,103 ms for org.openide.awt.MenuBar$LazyMenu$MenuFolder@71801e(FolderList{MultiFileObject@2a65fb[Menu/Window]})
+WARNING [org.openide.filesystems.Ordering]: Relative ordering attribute master-help.xml/org-sleuthkit-autopsy-corecomponents-CustomAboutAction.shadow on Menu/Help is deprecated in favor of numeric position attributes
+Nov 18, 2014 7:55:18 PM org.sleuthkit.autopsy.corecomponents.DataContentTopComponent findInstance
+WARNING: Cannot find DataContentTopComponent component. It will not be located properly in the window system.
+Nov 18, 2014 7:57:30 PM org.sleuthkit.autopsy.casemodule.Case open
 INFO: Opening case.
 configFilePath: C:\Users\jason\Documents\XPTestFMR\XPTestFMR.aut
 INFO [org.sleuthkit.datamodel.SleuthkitCase]: sqlite-jdbc version 3.7.151 loaded in native mode
-Nov 18, 2014 2:49:46 PM org.sleuthkit.autopsy.keywordsearch.Server validateIndexLocation
+Nov 18, 2014 7:57:30 PM org.sleuthkit.autopsy.keywordsearch.Server validateIndexLocation
 INFO: Validating keyword search index location
-Nov 18, 2014 2:49:46 PM org.sleuthkit.autopsy.keywordsearch.Server isRunning
+Nov 18, 2014 7:57:30 PM org.sleuthkit.autopsy.keywordsearch.Server isRunning
 INFO: Solr server is running
-Nov 18, 2014 2:49:47 PM org.sleuthkit.autopsy.casemodule.Case doCaseChange
-INFO: Changing Case to: org.sleuthkit.autopsy.casemodule.Case@e70918
-Nov 18, 2014 2:49:48 PM org.sleuthkit.autopsy.corecomponents.DataContentTopComponent findInstance
+Nov 18, 2014 7:57:33 PM org.sleuthkit.autopsy.casemodule.Case doCaseChange
+INFO: Changing Case to: org.sleuthkit.autopsy.casemodule.Case@5cc9e7
+Nov 18, 2014 7:57:34 PM org.sleuthkit.autopsy.corecomponents.DataContentTopComponent findInstance
 WARNING: Cannot find DataContentTopComponent component. It will not be located properly in the window system.
-Nov 18, 2014 2:49:48 PM org.sleuthkit.autopsy.casemodule.Case doCaseChange
-INFO: Physical memory usage (max, total, free): 709558272, 70557696, 30441088
-JVM heap usage: init = 58720256(57344K) used = 40116608(39176K) committed = 70557696(68904K) max = 709558272(692928K), JVM non-heap usage: init = 2359296(2304K) used = 38906120(37994K) committed = 41353216(40384K) max = -1(-1K)
-Process Virtual Memory: 1,276,989,440
-WARNING [org.openide.filesystems.Ordering]: Relative ordering attribute master-help.xml/org-sleuthkit-autopsy-corecomponents-CustomAboutAction.shadow on Menu/Help is deprecated in favor of numeric position attributes
-Nov 18, 2014 2:49:50 PM org.sleuthkit.autopsy.report.freemarkerreport.FreeMarkerReportModule <init>
-INFO: Looking for templates in: C:\Users\jason\Documents\NetBeansProjects\FreeMarkerReports\build\testuserdir
+Nov 18, 2014 7:57:34 PM org.sleuthkit.autopsy.casemodule.Case doCaseChange
+INFO: Physical memory usage (max, total, free): 709558272, 56885248, 21889328
+JVM heap usage: init = 58720256(57344K) used = 34995920(34175K) committed = 56885248(55552K) max = 709558272(692928K), JVM non-heap usage: init = 2359296(2304K) used = 42025264(41040K) committed = 42893312(41888K) max = -1(-1K)
+Process Virtual Memory: 1,257,656,320
+WARNING [org.netbeans.core.TimableEventQueue]: too much time in AWT thread org.netbeans.modules.sampler.InternalSampler@1ef67c
+WARNING [org.netbeans.core.TimableEventQueue]: too much time in AWT thread null
+WARNING [org.netbeans.core.TimableEventQueue]: no snapshot taken
+Nov 18, 2014 7:59:26 PM org.sleuthkit.autopsy.report.freemarkerreport.FreeMarkerReportModule <init>
+INFO: Looking for templates in: C:\Users\jason\Documents\NetBeansProjects\FreeMarkerReports\build\testuserdir\templates
+WARNING [org.netbeans.modules.progress.spi.InternalHandle]: Cannot switch to silent mode when not running at org.netbeans.core.ui.warmup.MenuWarmUpTask$NbWindowsAdapter$1HandleBridge.run(MenuWarmUpTask.java:269)
 log4j:WARN No appenders could be found for logger (freemarker.cache).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Nov 18, 2014 7:59:47 PM org.sleuthkit.autopsy.report.freemarkerreport.FreeMarkerReportModule generateReport
+SEVERE: Error reading imported template libs/macros.ftl
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #import "/libs/macros.ftl" as macros  [in template "default\\report.html" at line 1, column 1]
+----
+Nov 18, 2014 8:10:10 PM org.sleuthkit.autopsy.report.freemarkerreport.FreeMarkerReportModule generateReport
+SEVERE: Syntax error in template "default\\report.html" in line 1, column 29:
+Encountered "as", but was expecting one of:
+    ".."
+    <DOT_DOT_LESS>
+    "..*"
+    ";"
+    <ID>
+    ">"
+    <EMPTY_DIRECTIVE_END>
+    "."
+    "["
+    "("
+    "?"
+    "!"
+    <TERMINATING_EXCLAM>
+    "??"
+    "+"
+    "-"
+    "*"
+    "/"
+    "%"
+    "!="
+    "="
+    "=="
+    ">="
+    <ESCAPED_GTE>
+    ">"
+    <ESCAPED_GT>
+    <LESS_THAN_EQUALS>
+    <LESS_THAN>
+    <AND>
+    <OR>
+Nov 18, 2014 8:11:58 PM org.sleuthkit.autopsy.report.freemarkerreport.FreeMarkerReportModule generateReport
+SEVERE: Error reading imported template lib/macros.ftl
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #import "/lib/macros.ftl" as macros  [in template "default\\report.html" at line 1, column 1]
+----
+Nov 18, 2014 8:13:41 PM org.sleuthkit.autopsy.report.freemarkerreport.FreeMarkerReportModule generateReport
+SEVERE: Error reading imported template lib/macros.ftl
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #import "/lib/macros.ftl" as macros  [in template "default\\report.html" at line 1, column 1]
+----
+Nov 18, 2014 8:23:19 PM org.sleuthkit.autopsy.report.freemarkerreport.FreeMarkerReportModule generateReport
+SEVERE: Error reading imported template lib/macros.ftl
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #import "/lib/macros.ftl" as macros  [in template "default\\report.html" at line 1, column 1]
+----

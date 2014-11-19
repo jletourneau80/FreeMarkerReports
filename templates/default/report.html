@@ -1,3 +1,4 @@
+<#import "/default/lib/macros.ftl" as macros>
 <html>
 <head>
 <!-- Latest compiled and minified CSS -->
@@ -7,12 +8,15 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 
 <!-- Custom styles for this template -->
-<link href="css/dashboard.css" rel="stylesheet">
+<link href="assets/dashboard.css" rel="stylesheet">
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-</head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
+<script src="assets/bootstrap.min.js"></script>
+
+<link href="assets/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
 
 
 <body>
@@ -35,58 +39,63 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
+            <li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
+            <li><strong>Artifacts</strong></li>
+            
+            <#list sleuthkitCase.blackboardArtifactTypesInUse as artifact>
+                <li><a href="#${artifact}" data-toggle="tab"> ${artifact.displayName}</a></li>
+            </#list>
+            
             <li><a href="#">Analytics</a></li>
             <li><a href="#">Export</a></li>
           </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-          </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Dashboard</h1>
+          
 
-          <div class="row placeholders">
-          <h2 class="sub-header">Section title</h2>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <div class="tab-content">
+            <h1 class="page-header">Dashboard</h1>
+            <!---begin data for nav1 --->
+            <div id="overview" class="tab-pane active">
+                <div class="row placeholders">
+                <h2 class="sub-header">Section title</h2>
+                <div class="table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Header</th>
+                        <th>Header</th>
+                        <th>Header</th>
+                        <th>Header</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1,001</td>
+                        <td>Lorem</td>
+                        <td>ipsum</td>
+                        <td>dolor</td>
+                        <td>sit</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                </div>
+            </div>
+            <!---end data for nav1 --->
+             <@macros.generateArtifactTable />
+            
+            <!---begin data for nav2 --->
+            
+            <!---end data for nav2 --->
         </div>
+          
+          
+          
       </div>
     </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    </div>
     
   </body>

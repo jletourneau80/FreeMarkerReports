@@ -134,35 +134,44 @@ class FreeMarkerReportModule implements GeneralReportModule {
         
         //<artifactName : ListOf<attribute:value>>
         
-        HashMap<BlackboardArtifact.ARTIFACT_TYPE, ArrayList<HashMap<String,String>>> artifacts = new HashMap<BlackboardArtifact.ARTIFACT_TYPE, ArrayList<HashMap<String, String>>>();
+        HashMap<String, ArrayList<HashMap<String,String>>> artifacts = new HashMap<String, ArrayList<HashMap<String, String>>>();
+        HashMap<String, String> artifactDisplayMapping = new HashMap<String, String>();
         try{
             for (BlackboardArtifact.ARTIFACT_TYPE artifactType : skCase.getBlackboardArtifactTypesInUse()){
-                artifacts.put(artifactType, new ArrayList<HashMap<String, String>>());
+                artifacts.put(artifactType.getLabel(), new ArrayList<HashMap<String, String>>());
+                artifactDisplayMapping.put(artifactType.getLabel(), artifactType.getDisplayName());
+                
                 for (BlackboardArtifact artifact : skCase.getBlackboardArtifacts(artifactType)){
+                
                     HashMap<String, String> attributes = new HashMap<String, String>();
                     for (BlackboardAttribute attribute : artifact.getAttributes()){
                         attributes.put(attribute.getAttributeTypeDisplayName(), attribute.getValueString());
                     }
-                    artifacts.get(artifactType).add(attributes);
+                    attributes.put("Source File", skCase.getAbstractFileById(artifact.getObjectID()).getUniquePath());
+                    artifacts.get(artifactType.getLabel()).add(attributes);
                 }
             }
         }catch(Exception e){
             logger.log(Level.INFO, e.getMessage());
         }
         data.put("artifacts", artifacts);
+        data.put("artifactDisplayMapping",artifactDisplayMapping);
         
-        HashMap<String, ArrayList<Content>> contentTagMap = new HashMap<String, ArrayList<Content>>();
+        
+        HashMap<String, ArrayList<ContentTag>> contentTagMap = new HashMap<String, ArrayList<ContentTag>>();
         try{
             for (ContentTag tag : skCase.getAllContentTags()){
-                if (!contentTagMap.containsKey(tag.getName().getDisplayName())){
-                    contentTagMap.put(tag.getName().getDisplayName(), new ArrayList<Content>());
+                if (!contentTagMap.containsKey(String.valueOf(tag.getName().getId()))){
+                    contentTagMap.put(String.valueOf(tag.getName().getId()), new ArrayList<ContentTag>());
                 }
-                contentTagMap.get(tag.getName().getDisplayName()).add(tag.getContent());
+                contentTagMap.get(String.valueOf(tag.getName().getId())).add(tag);
             }
         }catch(Exception e){
             logger.log(Level.INFO, e.getMessage());
         }
 
+        data.put("contentTags", contentTagMap);
+        
         try{
             Template temp = cfg.getTemplate(selectedTemplate + "\\report" + reportExtension);
             BufferedWriter out = new BufferedWriter(new FileWriter(reportPath));

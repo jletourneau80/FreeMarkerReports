@@ -1,4 +1,6 @@
 <#import "/default/lib/macros.ftl" as macros>
+
+
 <html>
 <head>
 <!-- Latest compiled and minified CSS -->
@@ -40,10 +42,16 @@
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
+            <li><strong>Tags</strong></li>
+            
+            <#list contentTags?keys as tag>
+                <li><a href="#${tag}" data-toggle="tab"> ${contentTags[tag]?first.name.displayName}</a></li>
+            </#list>
+            
             <li><strong>Artifacts</strong></li>
             
-            <#list sleuthkitCase.blackboardArtifactTypesInUse as artifact>
-                <li><a href="#${artifact}" data-toggle="tab"> ${artifact.displayName}</a></li>
+            <#list artifacts?keys as artifact>
+                <li><a href="#${artifact}" data-toggle="tab"> ${artifactDisplayMapping[artifact]}</a></li>
             </#list>
             
             <li><a href="#">Analytics</a></li>
@@ -85,6 +93,7 @@
             </div>
             <!---end data for nav1 --->
              <@macros.generateArtifactTable />
+             <@macros.generateContentTagTable />
             
             <!---begin data for nav2 --->
             
